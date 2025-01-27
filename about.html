@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>NSBE UMass Boston - About</title>
+    <link rel='stylesheet' href='style.css'>
+    <style>
+         .content {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: justify;
+            display: block;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #9d8412;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            width: 100%;
+            display: block;
+            word-spacing: normal;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            list-style-position: inside;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+            list-style: disc;
+        }
+
+        .content ul li b {
+            color: #9d8412;
+        }
+
+        .content b {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class='nav-bar'>
+        <div class='logo'>
+            <img src='gfx/nsbe.png'><img src='gfx/umb.png' style='height:80px'>
+        </div>
+        <ul class='nav-links' id='nav-links'>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='#' style='color:#9d8412'>About</a></li>
+            <li><a href='eboard.html'>E-Board</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+        </ul>
+        <div class='hamburger' id='hamburger'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <div class='content'>
+        <h1>About Us</h1>
+        <p><b>Welcome to the National Society of Black Engineers (NSBE) at UMass Boston!</b></p>
+        <p>
+            We are a vibrant community dedicated to supporting and empowering Black students in STEM (Science, Technology, Engineering, and Mathematics) fields. Our chapter is part of a larger national organization that strives to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>
+            At NSBE UMass Boston, we are committed to fostering an environment where innovation, leadership, and academic excellence thrive. We aim to bridge the gap for underrepresented students in engineering and related fields by providing resources, mentorship, and professional development opportunities.
+        </p>
+
+        <h2>What We Offer</h2>
+        <ul>
+            <li><b>Professional Development:</b> Workshops, resume reviews, and networking events with industry leaders to prepare our members for successful careers.</li>
+            <li><b>Academic Support:</b> Study groups, tutoring sessions, and resources to help our members excel in their coursework.</li>
+            <li><b>Community Engagement:</b> Volunteer opportunities and outreach initiatives to inspire the next generation of Black engineers in our local communities.</li>
+            <li><b>Networking:</b> Access to a national network of NSBE members, alumni, and industry professionals.</li>
+        </ul>
+
+        <h2>Our Values</h2>
+        <ul>
+            <li><b>Excellence:</b> We encourage academic achievement and personal growth.</li>
+            <li><b>Inclusion:</b> We celebrate diversity and foster a sense of belonging for all.</li>
+            <li><b>Service:</b> We are committed to giving back to our community.</li>
+            <li><b>Leadership:</b> We empower members to lead with confidence and purpose.</li>
+        </ul>
+
+        <h2>Why Join Us?</h2>
+        <p>
+            Joining NSBE at UMass Boston means becoming part of a family that celebrates your successes, supports your aspirations, and helps you reach your full potential. Whether you are looking to expand your network, gain hands-on experience, or simply connect with like-minded individuals, NSBE provides a platform for you to thrive.
+        </p>
+        <p>
+            <b>Let’s build a future where Black engineers lead the way in shaping innovation, solving problems, and transforming communities.</b>
+        </p>
+
+        <h3>Connect With Us!</h3>
+        <p>
+            Stay up to date on our upcoming events, meetings, and initiatives by following us on social media or reaching out via email.
+        </p>
+        <p>
+            Together, we’re building bridges to opportunity, one step at a time.<br><br>
+            <a href='contact.html' class='learn-more-btn'>Contact Us</a>
+        </p>
+    </div>
+
+    <div class='socials'>
+        <h3>Follow us on socials:</h3>
+        <a href='https://x.com/UMB_NSBE'><img src='gfx/x.png' alt='X (Twitter)'></a>
+        <a href='https://www.linkedin.com/in/umb-nsbe-5a53a6348/'><img src='gfx/linkedin.png' alt='LinkedIn'></a>
+        <a href='https://www.instagram.com/nsbe_umb/?hl=en'><img src='gfx/insta.png' alt='Instagram'></a>
+        <a href='https://nsbe.org'><img src='gfx/nsbe.png' alt='Facebook'></a>
+    </div>
+
+</body>
+</html>

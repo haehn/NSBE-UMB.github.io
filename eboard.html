@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>NSBE UMass Boston</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+    <nav class='nav-bar'>
+        <div class='logo'>
+            <img src='gfx/nsbe.png'><img src='gfx/umb.png' style='height:80px'>
+        </div>
+        <ul class='nav-links' id='nav-links'>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a href='#' style='color:#9d8412'>E-Board</a></li>
+            <li><a href='contact.html'>Contact</a></li>
+        </ul>
+        <div class='hamburger' id='hamburger'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+
+<div class="e-board">
+    <div class="member">
+        <img src="eboard/keyshawn.jpg" alt="Member 1">
+        <h3>Keyshawn Jeannot</h3>
+        <p>PRESIDENT</p>
+    </div>
+    <div class="member">
+        <img src="eboard/ishaan.jpg" alt="Member 2">
+        <h3>Ishaan Rangnekar</h3>
+        <p>VICE PRESIDENT (INTERNAL)</p>
+    </div>
+    <div class="member">
+        <img src="eboard/sarai.jpg" alt="Member 3">
+        <h3>Sarai Cene</h3>
+        <p>VICE PRESIDENT (EXTERNAL)</p>
+    </div>
+    <div class="member">
+        <img src="eboard/ahmed.jpg" alt="Member 4">
+        <h3>Ahmed Ali</h3>
+        <p>SECRETARY</p>
+    </div>
+    <div class="member">
+        <img src="eboard/serin.jpg" alt="Member 5">
+        <h3>Serin Kitery</h3>
+        <p>PROGRAMS CHAIR</p>
+    </div>
+    <div class="member">
+        <img src="eboard/wesley.jpg" alt="Member 6">
+        <h3>Wesley Delvoix</h3>
+        <p>TREASURER</p>
+    </div>
+    <div class="member">
+        <img src="eboard/rebecca.jpg" alt="Member 7">
+        <h3>Rebecca Michel</h3>
+        <p>PROFESSIONAL DELEGATE</p>
+    </div>
+    <div class="member">
+        <img src="eboard/synsmyr.jpg" alt="Member 8">
+        <h3>Synsmyr Forgue</h3>
+        <p>PROFESSIONAL DELEGATE</p>
+    </div>
+    <div class="member">
+        <img src="eboard/daniel.jpg" alt="Member 9">
+        <h3>Daniel Haehn</h3>
+        <p>FACULTY ADVISOR</p>
+    </div>
+</div>
+
+<style>
+    .e-board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        justify-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    .member {
+        text-align: center;
+    }
+
+    .member img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #9d8412;
+    }
+
+    .member h3 {
+        color: #9d8412;
+        margin: 10px 0 5px;
+    }
+
+    .member p {
+        color: white;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .e-board {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</body>
+</html>
